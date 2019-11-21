@@ -1,0 +1,29 @@
+name: ai_flutter_project
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite: ^1.0.4
+  image_picker: ^0.6.1+8
+  image: ^2.1.4
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  # the material Icons class.
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/tflite/ssd_mobilenet.tflite
+    - assets/tflite/ssd_mobilenet.txt
+    - assets/tflite/yolov2_tiny.tflite
+    - assets/tflite/yolov2_tiny.txt
